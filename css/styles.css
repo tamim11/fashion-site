@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > div > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header > div > img {
+    width: 300px;
+}
+
+header > div > ul > li > a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1rem;
+    display: block;
+    color: black;
+}
+
+header > div > ul > li:hover {
+    background-color: greenyellow;
+}
+
+.container {
+    width: 70vw;
+    min-height: 70vh;
+    margin: 20px auto;
+}
+
+.section-top {
+    display: flex;
+}
+
+.right-section {
+    align-self: center;
+}
+
+.btn {
+    background-color: rgb(50, 50, 241);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.left-image {
+    align-self: center;
+}
+
+.left-image img {
+    width: 80%;
+}
+
+.bluish-color {
+    color: #363958;
+}
+
+.orange-color {
+    color: #fa804c;
+}
+
+.card-item {
+    width: 400px;
+    height: 600px;
+    padding: 10px 30px;
+    background-color: aliceblue;
+    margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card img {
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.third-section {
+    display: flex;
+}
+
+.left-side {
+    width: 40%;
+    margin-top: 3rem;
+}
+
+.left-side-item {
+    display: flex;
+    min-height: 150px;
+    align-items: center;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .7rem;
+}
+
+.left-side-item img {
+    width: 70%;
+}
+
+.right-side {
+    width: 60%;
+    align-self: center;
+    margin-left: 3rem;
+}
+
+.right-side img {
+    width: 90%;
+}
+
+
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    header > div > ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-top {
+        flex-direction: column;
+    }
+
+    .third-section {
+        flex-direction: column;
+    }
+
+    .right-side {
+        order: -1;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .left-side-item {
+        flex-direction: column;
+    }
+}
